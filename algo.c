@@ -73,7 +73,8 @@ int			solve_grid(char **grid, char ***res, t_position search_from)
 	//printf("[debug] | found first_available at [%d][%d]\n", current_position.y, current_position.x);
 	if (current_position.y == -1 || current_position.x == -1)
 	{
-		*res = alloc_grid(grid);
+		if (*res != 0)
+			*res = alloc_grid(grid);
 		return (1);
 	}
 	sub_solutions_nb = 0;

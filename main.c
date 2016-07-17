@@ -58,6 +58,7 @@ int			main(int ac, char **av)
 
 	if (error_in_arguments(ac, av))
 		exit_error();
+	res = 0;
 	solutions_nb = solve(av + 1, &res);
 	if (solutions_nb != 1)
 		exit_error();
