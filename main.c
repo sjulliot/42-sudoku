@@ -39,10 +39,10 @@ void		print_solution(char **av)
 	int		j;
 
 	i = -1;
-	while (++i <= 9)
+	while (++i < 9)
 	{
 		j = -1;
-		while (++j <= 9)
+		while (++j < 9)
 		{
 			write(1, av[i] + j, 1);
 			ft_putstr(" ");
