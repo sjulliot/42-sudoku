@@ -37,7 +37,7 @@ t_position		find_first_available(char **grid, t_position search_from)
 			search_from.x++;
 		}
 		search_from.y++;
-		search_from.x = -1;
+		search_from.x = 0;
 	}
 	return ((t_position){.x = -1, .y = -1});
 }
